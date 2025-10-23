@@ -29,7 +29,7 @@ export default function ContactInfo() {
       icon: MapPin,
       title: "Head Office",
       details:
-        "Kwali, F.C.T Abuja, Nigeria",
+        "Jos, Plateau State, Nigeria",
       delay: 0,
     },
     {

@@ -80,7 +80,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex gap-2">
                 <MapPin size={16} className="flex-shrink-0 mt-0.5" />
-                <p className="opacity-80">Kwali, F.C.T Abuja, Nigeria</p>
+                <p className="opacity-80">Jos, Plateau State, Nigeria</p>
               </div>
               <div className="flex gap-2">
                 <Mail size={16} className="flex-shrink-0 mt-0.5" />
