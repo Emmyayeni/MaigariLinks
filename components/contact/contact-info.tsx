@@ -42,8 +42,8 @@ export default function ContactInfo() {
     {
       icon: Phone,
       title: "Phone",
-      details: "+234 (insert number)",
-      link: "tel:+234",
+      details: "+234 8169597072",
+      link: "tel:+234 8169597072",
       delay: 2,
     },
     {
