@@ -76,7 +76,7 @@ export default function ContactHero() {
             Send a Message
           </a>
           <a
-            href="tel:+234"
+            href="tel:+2348169597072"
             className="px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-300 hover:scale-105"
           >
             Call Us Now
