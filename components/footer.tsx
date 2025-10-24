@@ -100,10 +100,10 @@ export default function Footer() {
         <div className="border-t border-[#1c1c1c]/20 dark:border-[#cccccc]/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm opacity-80">© 2025 Maigari Links Oil & Gas Ltd. All rights reserved.</p>
           <div className="flex gap-4">
-            <a href="#" className="opacity-80 hover:text-accent transition">
+            <a href="" className="opacity-80 hover:text-accent transition">
               <Linkedin size={20} />
             </a>
-            <a href="#" className="opacity-80 hover:text-accent transition">
+            <a href="https://x.com/MaigariLinks" className="opacity-80 hover:text-accent transition">
               <Twitter size={20} />
             </a>
           </div>
