@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "Where are your operations based?",
     answer:
-      "Our head office is located in Kwali, F.C.T Abuja, with operations expanding across Nigeria and neighboring regions.",
+      "Our head office is located in Jos, Plateau State, Nigeria, with operations expanding across Nigeria and neighboring regions.",
   },
   {
     question: "What safety standards do you follow?",
