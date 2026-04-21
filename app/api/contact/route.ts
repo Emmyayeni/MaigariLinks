@@ -2,8 +2,6 @@ import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { generateContactEmail } from '@/lib/email-templates'
 
-const resend = new Resend(process.env.RESEND_API_KEY || '')
-
 export async function POST(request: Request) {
   try {
     // Parse request body with error handling
@@ -62,15 +60,22 @@ ${message}
     // Log the submission (you can see this in server logs)
     console.log('Contact Form Submission:', emailBody)
 
-    // Send email using Resend
+    // Send email using Resend when API key is configured
     try {
-      await resend.emails.send({
-        from: process.env.EMAIL_FROM || 'onboarding@resend.dev',
-        to: process.env.NOTIFY_EMAIL || 'Yusufmagaji3041@gmail.com',
-        subject: `Contact Form: ${service || 'General Inquiry'}`,
-        text: emailBody,
-        html: htmlEmail,
-      })
+      const resendApiKey = process.env.RESEND_API_KEY
+      if (!resendApiKey) {
+        console.warn('RESEND_API_KEY is missing. Skipping contact email send.')
+      } else {
+        const resend = new Resend(resendApiKey)
+
+        await resend.emails.send({
+          from: process.env.EMAIL_FROM || 'onboarding@resend.dev',
+          to: process.env.NOTIFY_EMAIL || 'Yusufmagaji3041@gmail.com',
+          subject: `Contact Form: ${service || 'General Inquiry'}`,
+          text: emailBody,
+          html: htmlEmail,
+        })
+      }
     } catch (sendErr) {
       console.error('Resend send error:', sendErr)
       // Continue - we still return success to the client but log the error for ops
