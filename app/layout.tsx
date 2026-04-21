@@ -29,12 +29,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/logo-light.png" type="image/png" sizes="32x32" />
-        <link rel="shortcut icon" href="/logo-light.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/logo-light.png" type="image/png" />
+        <link rel="icon" href="/logomain.png" type="image/png" sizes="48x48" />
+        <link rel="shortcut icon" href="/logomain.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/logomain.png" type="image/png" sizes="180x180" />
         <link
           rel="preload"
-          href="/logo-dark.png"
+          href="/logomain.png"
           as="image"
           type="image/png"
           fetchPriority="high"

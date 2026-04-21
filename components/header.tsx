@@ -52,26 +52,26 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border transition-theme">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo - Bigger and responsive */}
-          <a href="/" className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity duration-300">
+          <a href="/" className="flex items-center gap-0 hover:opacity-80 transition-opacity duration-300">
             <Image
-              src="/logo-dark.png"
+              src="/logomain.png"
               alt="Maigari Links Logo"
-              width={64}
-              height={64}
-              className="transition-all duration-300 w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18"
+              width={96}
+              height={96}
+              className="transition-all duration-300 w-20 h-20 sm:w-24 sm:h-24 md:w-24 md:h-24"
               priority
               fetchPriority="high"
               loading="eager"
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmw=="
             />
-            <div className="block">
-              <span className="font-bold text-base sm:text-lg md:text-xl text-foreground block leading-tight">
+            <div className="block leading-none -ml-3 sm:-ml-4">
+              <span className="font-bold text-base sm:text-lg md:text-xl text-foreground block leading-[1.05]">
                 Maigari Links
               </span>
-              <span className="text-xs sm:text-sm text-accent font-semibold block leading-tight">
+              <span className="text-xs sm:text-sm text-accent font-semibold block leading-none mt-0.5">
                 Oil & Gas Ltd
               </span>
             </div>

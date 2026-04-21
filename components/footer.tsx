@@ -3,16 +3,16 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="py-16 transition-colors duration-300 bg-[#f5f5f5] dark:bg-[#0a0a0a] text-[#1c1c1c] dark:text-[#cccccc]">
+    <footer className="py-16 transition-colors duration-300 bg-[var(--footer-bg)] text-[var(--footer-text)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Company Info with Logo */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <Image src="/logo-dark.png" alt="Maigari Links Logo" width={48} height={48} className="w-12 h-12" />
-              <div>
-                <span className="font-bold block">Maigari Links</span>
-                <span className="text-xs font-semibold text-accent">Oil & Gas Ltd</span>
+            <div className="flex items-center gap-0 mb-4">
+              <Image src="/logomain.png" alt="Maigari Links Logo" width={64} height={64} className="w-16 h-16" />
+              <div className="-ml-3 sm:-ml-4 leading-none">
+                <span className="font-bold block leading-[1.05]">Maigari Links</span>
+                <span className="text-xs font-semibold text-accent block leading-none mt-0.5">Oil & Gas Ltd</span>
               </div>
             </div>
             <p className="text-sm opacity-80">
@@ -97,7 +97,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-[#1c1c1c]/20 dark:border-[#cccccc]/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-current/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm opacity-80">© 2025 Maigari Links Oil & Gas Ltd. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="" className="opacity-80 hover:text-accent transition">
